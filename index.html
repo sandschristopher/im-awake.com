@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWAKE</title>
+    <title>AWAKE - Coming Soon</title>
     <style>
         body {
             margin: 0;
@@ -14,42 +14,52 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            min-height: 100vh;
+            height: 100vh;
         }
 
+        /* Header with logo */
         header {
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 20px;
         }
 
         .logo {
-            font-size: 3em;
-            letter-spacing: 2px;
+            font-size: 1.5em;
+            margin-left: 20px;
         }
 
         .instagram {
-            margin-top: 10px;
+            margin-right: 20px;
         }
 
         .instagram img {
-            width: 30px;
-            height: 30px;
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Coming soon section */
+        .coming-soon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-grow: 1;
         }
 
         .coming-soon {
-            text-align: center;
-            margin-top: 50px;
+            font-size: 3em;
+            margin-right: 20px;
         }
 
         .coming-soon img {
-            width: 50px;
-            height: 50px;
-            margin-left: 20px;
-            vertical-align: middle;
+            width: 150px;
+            height: 150px;
         }
 
+        /* Footer with Privacy Policy and Support buttons */
         footer {
-            background-color: black;
             text-align: center;
             padding: 20px;
         }
@@ -67,15 +77,13 @@
             background-color: white;
             color: black;
         }
-
     </style>
 </head>
 <body>
 
-    <!-- Header with Logo -->
+    <!-- Header with Logo and Instagram Icon -->
     <header>
         <div class="logo">AWAKE</div>
-        <!-- Instagram Logo with Link -->
         <div class="instagram">
             <a href="https://www.instagram.com/collective.awake" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
@@ -83,9 +91,9 @@
         </div>
     </header>
 
-    <!-- Coming Soon Section -->
-    <div class="coming-soon">
-        <h1>COMING SOON</h1>
+    <!-- Coming Soon Section with Image -->
+    <div class="coming-soon-container">
+        <div class="coming-soon">COMING<br>SOON</div>
         <img src="icon.png" alt="Icon">
     </div>
 
